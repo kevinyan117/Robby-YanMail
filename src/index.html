@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Robby & Yan Dapp Mail</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Robby & Yan Dapp Mail</h1>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <div id="petsRow" class="row">
+
+      </div>
+    </div>
+
+    <div class="container">
+          <div id="petsRow" class="row">
+            <div class="col-sm-6 col-sm-push-3 col-md-4 col-md-push-4">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <h4>Choose your Acount</h4>
+                  <input type="text" class="form-control" id="TTAcount" placeholder="Address" />
+                  <button class="btn btn-primary" id="acountConfirmButton" type="button">Confirm</button>
+                  <strong>Acount</strong>: <span id="TXAcount"></span> <br/><br/>
+                  <h4>Send</h4>
+                  <input type="text" class="form-control" id="TTTransferAddress" placeholder="Address" />
+                  <input type="text" class="form-control" id="TTTransferAmount" placeholder="Context" />
+                  <button class="btn btn-primary" id="sendButton" type="button">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <div id="petTemplate" style="display: none;">
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="panel panel-default panel-pet">
+          <div class="panel-heading">
+            <h3 class="panel-title">Scrappy</h3>
+          </div>
+          <div class="panel-body">
+            <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://previews.123rf.com/images/mamanamsai/mamanamsai1501/mamanamsai150100386/35929070-email-icon-on-blue-background-clean-vector.jpg" data-holder-rendered="true">
+            <br/><br/>
+            <strong>Breed</strong>: <span class="pet-breed">Golden Retriever</span><br/>
+            <strong>Age</strong>: <span class="pet-age">3</span><br/>
+            <strong>Location</strong>: <span class="pet-location">Warren, MI</span><br/><br/>
+            <button class="btn btn-default btn-adopt" type="button" data-id="0">Adopt</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <!--<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>-->
+    <!--<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
